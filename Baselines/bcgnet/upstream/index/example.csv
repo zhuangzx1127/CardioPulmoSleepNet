@@ -1,0 +1,3 @@
+path,duration,age,bmi,sexM,patient_id,time,split
+D:/wuji/hsp/sub-S0001111189075/ses-1.npz,28395.0,69.0,,0.0,sub-S0001111189075,2020-04-23 22:16:11,train
+D:/wuji/hsp/sub-S0001111189359/ses-1.npz,27648.0,62.0,29.7,1.0,sub-S0001111189359,2013-04-02 22:21:57,val

@@ -6,8 +6,9 @@ framework for longitudinal sleep-health monitoring*.
 
 The example loads a pretrained CardioPulmoSleepNet checkpoint and predicts
 four-class sleep staging and a night-level apnea-hypopnea index (AHI) from a
-de-identified single-night sample. Training code, training configurations, and
-clinical datasets are intentionally not included.
+de-identified single-night sample. Baseline reproduction code and public-cohort
+participant splits are provided in [Baselines](Baselines/README.md). Training code
+and configurations for the proposed model, and clinical datasets, are not included.
 
 ## Repository contents
 
@@ -18,6 +19,9 @@ clinical datasets are intentionally not included.
 ├── demo.py                  # Inference entry point
 ├── model.py                 # Model definition required for inference
 ├── verify_demo.py           # Reference-result regression check
+├── Baselines/               # Five baseline training/evaluation adapters
+├── Dataset/splits.json      # Main public-cohort participant split
+├── BaselineInputs/native_10h/splits.json  # BCGNet/DRIVEN common subset
 ├── requirements.txt         # Reproduced Python dependencies
 ├── environment.yml          # Optional Conda environment
 └── SHA256SUMS               # Integrity hashes for model/data artifacts
@@ -92,9 +96,25 @@ shasum -a 256 -c SHA256SUMS
 
 For a different sample or checkpoint, use `python demo.py --help`.
 
+## Baseline reproductions
+
+[Baselines/README.md](Baselines/README.md) documents ResSleepNet, OxiNet,
+wav2sleep, BCGNet and DRIVEN, their dependencies and prepared-input formats.
+The main split contains 9,905/1,394/2,870 training/validation/test nights. The
+BCGNet/DRIVEN subset excludes three training nights; validation and test
+assignments are identical. Input specifications and data access are described
+in the baseline documentation.
+
+Verify the added source files and split assignments from the repository root:
+
+```bash
+python Baselines/verify_release.py
+shasum -a 256 -c BASELINES_SHA256SUMS
+```
+
 ## Scope
 
-This release is an inference-only research artifact. It is not a medical device
+The inference example and baseline adapters are research artifacts. This repository is not a medical device
 and must not be used for clinical diagnosis or treatment decisions. The bundled
 example contains no explicit identifier field; authorization to redistribute
 physiological recordings must still be confirmed by the data owner before a

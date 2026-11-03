@@ -1,0 +1,238 @@
+{
+  "repo": "FiveSeasonsMedical/BCGNet",
+  "commit": "7a7d0e6aee18208fb5b152c5cedde31ea8445ae5",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "ebfdace6599e7b3753243c45eaa1e3645124f4d6acda8f0025f41e4eb90da75e"
+    },
+    {
+      "path": "augment/augment/default_augmenter.py",
+      "sha256": "1b850917c6ad3b9a24bbac52b23a0756726c04a3ce83affd53163e8d48ef3ef4"
+    },
+    {
+      "path": "augment/augment/transforms/__init__.py",
+      "sha256": "3fda9d6dd90f15b0e0673622f70852836b69a00a18f42dc614bae4a305f47d22"
+    },
+    {
+      "path": "augment/augment/transforms/aug.py",
+      "sha256": "e3f99aa1767fc0a2c78353322ab9fc3d92e6210ee7882d63e8e3f278576361bb"
+    },
+    {
+      "path": "augment/augment/transforms/noise.py",
+      "sha256": "a8172ce2d71d4c97510fc405a7a657037b8c2dabaf3115957ab5e440e38013a3"
+    },
+    {
+      "path": "augment/augment/transforms/scale.py",
+      "sha256": "8b266b9222bf623e7cecdc9d5d9be3db8e511e639418f2002baa2cba0ec93955"
+    },
+    {
+      "path": "augment/augment/transforms/zscore.py",
+      "sha256": "a4ba81586f1c2d38db781b43e9b4e35fb0e2903e404e1251bbf15930ce011194"
+    },
+    {
+      "path": "augment/augment/utils.py",
+      "sha256": "94fc562d4007c710ec6a0c45f2ecdf700c2d9799c7818f8f77a95994133bdf66"
+    },
+    {
+      "path": "augment/default_augmenter.py",
+      "sha256": "1b850917c6ad3b9a24bbac52b23a0756726c04a3ce83affd53163e8d48ef3ef4"
+    },
+    {
+      "path": "augment/transforms/__init__.py",
+      "sha256": "3fda9d6dd90f15b0e0673622f70852836b69a00a18f42dc614bae4a305f47d22"
+    },
+    {
+      "path": "augment/transforms/aug.py",
+      "sha256": "e3f99aa1767fc0a2c78353322ab9fc3d92e6210ee7882d63e8e3f278576361bb"
+    },
+    {
+      "path": "augment/transforms/noise.py",
+      "sha256": "a8172ce2d71d4c97510fc405a7a657037b8c2dabaf3115957ab5e440e38013a3"
+    },
+    {
+      "path": "augment/transforms/scale.py",
+      "sha256": "8b266b9222bf623e7cecdc9d5d9be3db8e511e639418f2002baa2cba0ec93955"
+    },
+    {
+      "path": "augment/transforms/zscore.py",
+      "sha256": "a4ba81586f1c2d38db781b43e9b4e35fb0e2903e404e1251bbf15930ce011194"
+    },
+    {
+      "path": "augment/utils.py",
+      "sha256": "94fc562d4007c710ec6a0c45f2ecdf700c2d9799c7818f8f77a95994133bdf66"
+    },
+    {
+      "path": "configs/ahi/base.yaml",
+      "sha256": "0bc9519f55eefd81d783d80d6fdadcc4bc8781a246b9a6882b6d45a068cd8a3a"
+    },
+    {
+      "path": "configs/ahi/fine_tuning_bcg.yaml",
+      "sha256": "7986c82959865e028e25fc0446d8bb73f9765c19e8625b6faf15bd311bfbd406"
+    },
+    {
+      "path": "configs/ahi/model-base.yaml",
+      "sha256": "b4c2eebfd146b6afbf7a276270f8f9c54fe14a4180fb455e22428bdae45f2251"
+    },
+    {
+      "path": "configs/ahi/psg_ahi.yaml",
+      "sha256": "9ab23d683f447325c242c7e2e19b3a799667b195024634991674de5fd6d40eb9"
+    },
+    {
+      "path": "configs/ahi/pure_bcg.yaml",
+      "sha256": "5dace2df3c797a37ee497b9347471cc36a63366b8dc3ed6eb3180443862798dc"
+    },
+    {
+      "path": "configs/ahi/wxbase.yaml",
+      "sha256": "be9073a6ce3308aefdc0e21d8fe466ed3f5f3dd820714477dd28f135d175f94a"
+    },
+    {
+      "path": "configs/ahi/wxmodel-base.yaml",
+      "sha256": "111035c732c6bd85971302b82e4373511f870604fad0fa80369f95d45a00b573"
+    },
+    {
+      "path": "configs/sleep_staging/base.yaml",
+      "sha256": "9b9a2a8730fcbd5466c68a04e0f2dda6fb6030d9bbec6318ea7da864b392c461"
+    },
+    {
+      "path": "configs/sleep_staging/bcg5.yaml",
+      "sha256": "8386e48faca008f543092114dba48b2705900a7a5d2d88e44fe650e6e30ff674"
+    },
+    {
+      "path": "configs/sleep_staging/fine_tuning_bcg5.yaml",
+      "sha256": "d50aeed54c408dc08736deef92725ff444c773df93f695b2837dc68d69e7612f"
+    },
+    {
+      "path": "configs/sleep_staging/model-base.yaml",
+      "sha256": "363f94232b8c8347eceda5e41a3e135784b9fd52ebb9f12ebd87666bbb0b8872"
+    },
+    {
+      "path": "configs/sleep_staging/psg5.yaml",
+      "sha256": "8ee28d3cf6b472e2d4d8713332370e8a07d477aba1a26e0f9cfc32ebf1e8a3df"
+    },
+    {
+      "path": "data/ahi.py",
+      "sha256": "c25208cbac78527ba67a176502ffe6d4214c7050d93eb3923609919ac2eae093"
+    },
+    {
+      "path": "data/default_dataset.py",
+      "sha256": "33383fba1bfedbff34b0215b64dae334595d2f4fef2f82df800d328bd1dee2cc"
+    },
+    {
+      "path": "data/extractors.py",
+      "sha256": "fe8c9c4ba30dc1466a09153a85a16146617589a7deb41e6be4e5fda30ce6f7b5"
+    },
+    {
+      "path": "data/sleep_staging.py",
+      "sha256": "98634b3454aeaca199fba8e8b0679010fa284f9eb642fee14b2bf3be27e4da3e"
+    },
+    {
+      "path": "index/example.csv",
+      "sha256": "eb1daaf2f2834749aff2089ca81bd27b76820d428aa3dd671bc36e072d744780"
+    },
+    {
+      "path": "losses/dicefocal.py",
+      "sha256": "a04ce2db42beadf253f575b9d8d3f8abf786a7b500ca7414d954d1ec81b39a31"
+    },
+    {
+      "path": "metrics/event_eval.py",
+      "sha256": "f710718cec92361f0be303a911c4795d539d96a02729c73ee2f69840dc0a3db5"
+    },
+    {
+      "path": "models/base.py",
+      "sha256": "4312c11cf0cf745b5c778a5dbe7262c49f4b8e714295d0608323a8d4d58243f6"
+    },
+    {
+      "path": "models/heads.py",
+      "sha256": "5146fc68ed35a85f58b17ead51a38d6d0ff79313125d0cf35748ae46bd4e24fe"
+    },
+    {
+      "path": "models/sleep_net_zero.py",
+      "sha256": "a2b8fec636314a0f3097355e6243f59d862b9845e35c4675e270bc5572ed648a"
+    },
+    {
+      "path": "models/sleep_staging.py",
+      "sha256": "4c1aaf6469dba0f833d9eececec7b363697fe138e5afbfa83eddf024d3f6633d"
+    },
+    {
+      "path": "setup.py",
+      "sha256": "87f0e8306acf6201371eee80c212f7a4524afd1126871927ef408735100716dc"
+    },
+    {
+      "path": "tasks/ahi.py",
+      "sha256": "f16c588ad9737bb1d51ace51892f72affb85396c950e4a456d91489c17075f86"
+    },
+    {
+      "path": "tasks/sleep_staging.py",
+      "sha256": "ebf9721448cf813dba39804f1fe3ed273ce8f9416a4a4525219570c3a5d4d488"
+    },
+    {
+      "path": "wuji_dl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "wuji_dl/cli.py",
+      "sha256": "b3385a07955caed6bb79011b6bf4e437c086eb0e94aa456b14f08089d5d16f2a"
+    },
+    {
+      "path": "wuji_dl/data.py",
+      "sha256": "2348be4113f30ca4c1bb5978fd58d8ad079d2bfa8b02521daba04d5f4cf199ed"
+    },
+    {
+      "path": "wuji_dl/display.py",
+      "sha256": "160cc832ad1289293d6566df6fe4da36351a101791e3f870bc387449005fb4f5"
+    },
+    {
+      "path": "wuji_dl/factory.py",
+      "sha256": "4ce6b9906a43219d0c1fbecccafc909ed813e399c5fa777eda6f9d43e271f678"
+    },
+    {
+      "path": "wuji_dl/metrics/__init__.py",
+      "sha256": "d573ba112534fac96071b79bdae39098d4912e6ae84bad2b6f5b064347a80324"
+    },
+    {
+      "path": "wuji_dl/metrics/classification.py",
+      "sha256": "609d69426ad22f90d24be3a5f54e77f7c50000235b2856a6e0553804c50f1177"
+    },
+    {
+      "path": "wuji_dl/ops/__init__.py",
+      "sha256": "5eb0779d6586dc3912a33552a6b239ee825ca116b48e7493db963075c134db15"
+    },
+    {
+      "path": "wuji_dl/ops/bce_with_logits.py",
+      "sha256": "57344dd91c24cc0d2340ad0ec333def4b7f8c304e710bd40d1a261a62598202c"
+    },
+    {
+      "path": "wuji_dl/ops/cross_entropy.py",
+      "sha256": "3082f35f89c9803397b34a12ea27d533d56811df79a68b3de2e4785f3e44106a"
+    },
+    {
+      "path": "wuji_dl/ops/functional.py",
+      "sha256": "7d4f8f31f72b1d826dba3329208a72a93ae37d977bc906b66ce07d8befd68f85"
+    },
+    {
+      "path": "wuji_dl/ops/res_block1d.py",
+      "sha256": "6f400ff7e79f5d15ee52a7bb050529d8e68ecd841e19c186d7a2cdeca6293540"
+    },
+    {
+      "path": "wuji_dl/ops/transpose.py",
+      "sha256": "c4defe4c5f79c544b0a94147479aad799bbd85105e493efe7f082cb83bc11e65"
+    },
+    {
+      "path": "wuji_dl/optim/__init__.py",
+      "sha256": "b958f55801ec5704fc469aec4f4c8e6fbef80fd6ba836b62d3234e367f4d82ad"
+    },
+    {
+      "path": "wuji_dl/optim/single.py",
+      "sha256": "5fd556f7380cb1b9054d4ddb88b604cd0e4e1ecf0798fe972eaacded5b7a15b5"
+    },
+    {
+      "path": "wuji_dl/runner.py",
+      "sha256": "72d7b7378eac5ada2bed7100369426b8a914961dea5653af0207a295d8f4f599"
+    },
+    {
+      "path": "wuji_dl/slicing.py",
+      "sha256": "8289c998829a45c7106a027b3f77d9e9a73b30608ea17e553320c3e484f59ef3"
+    }
+  ]
+}

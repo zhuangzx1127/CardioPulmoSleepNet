@@ -1,0 +1,53 @@
+project: sleep-staging
+_base:
+  - configs/sleep_staging/base.yaml
+  - configs/sleep_staging/model-base.yaml
+data:
+  common:
+    index: index/example.csv
+    max_tokens: 1535
+    stride_tokens: 0
+    batch_size: 32
+    r_margin: 0
+    token_sec: 30
+    memmap: false
+    num_workers: 4
+    features:
+      - src_name: heartbeat
+        input_channels: 1
+        token_len: 120
+        dtype: float64
+      - src_name: breath
+        input_channels: 1
+        token_len: 120
+        dtype: float64
+      - src_name: stage5
+        dst_name: stage
+        input_channels: 1
+        token_len: 1
+        is_input: False
+        dtype: long
+        pad_value: -1
+task:
+  _name: tasks.sleep_staging.SleepStagingTask
+  stages: ["W", "N1","N2", "N3", "R"]
+  criterion:
+    _name: wuji_dl.ops.CrossEntropyLoss
+    weight: [0.18 , 0.22 , 0.18 , 0.22, 0.20]
+    ignore_index: -1
+  model:
+    features:
+      - head: heartbeat
+        input_channels: 1
+        token_len: 120                                                                                        
+      - head: breath
+        input_channels: 1
+        token_len: 120
+    num_classes: 5
+  optimizer:
+    _name: torch.optim.Adam
+    lr: 1.0e-4
+trainer:
+  precision: 32
+
+PATIENCE: 10

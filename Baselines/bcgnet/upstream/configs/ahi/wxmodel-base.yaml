@@ -1,0 +1,17 @@
+task:
+  model:
+    _name: models.base.base_model
+    backbone:
+      _name: models.sleep_net_zero.SleepNetZeroBackbone
+      hidden_size: 512
+      num_hidden_layers: 6
+      num_attention_heads: 8
+      intermediate_size: 2048
+      max_position_embeddings: 1801
+
+    heads:
+      - _name: models.heads.seqProj
+        hidden_size: 512
+        num_classes: 1
+        output_name: ahi_event
+        token_len: 1

@@ -1,0 +1,38 @@
+{
+  "repo": "iPsych/OxiNet",
+  "commit": "b277ced7aacfd54639a731fa3cede7c3d5c2ce3a",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "OxiNet_API.py",
+      "sha256": "83def8e135833b6555ba1b5c4d2b16d4950cb546dc8897e844d43c6c2375164c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f9ae558e018b3ce4e288f441776ec68018034fc128ab0dfe779e9f11a488d9bf"
+    },
+    {
+      "path": "__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "architecture.py",
+      "sha256": "0ce0ebbdf0856bb220a8fb557251f6b508cb3bf7c6b839692813e8f167ae0ba5"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f9a13d3bd8494f1c0777cd1fb38b052084e61ffd093cf02e0947a69bcb5da70d"
+    },
+    {
+      "path": "saved_model/oxinet_config.csv",
+      "sha256": "1ddf35d7d06c9afe5171d7f6da0e973dfd7742c73bb8f94e86d00e19df10213b"
+    },
+    {
+      "path": "utils.py",
+      "sha256": "825bc91df35ad2867539ea700d02e54dbba3a409aaa79a6a29a54456a9dfcc3b"
+    }
+  ]
+}

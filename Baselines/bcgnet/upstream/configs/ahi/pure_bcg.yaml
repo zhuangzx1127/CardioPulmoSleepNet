@@ -1,0 +1,20 @@
+_base: 
+  - configs/ahi/base.yaml
+  - configs/ahi/model-base.yaml
+
+project: ah-events
+data:
+  _name: wuji_dl.data.DefaultDataModule
+  common:
+    batch_size: 32
+    index: index/example.csv
+    weighted_sampling: ahi_class
+task:
+  criterion:
+    _name: losses.dicefocal.FocalLossWrapper
+trainer:
+  log_every_n_steps: 10
+  max_epochs: 100
+  precision: 32
+
+PATIENCE: 10

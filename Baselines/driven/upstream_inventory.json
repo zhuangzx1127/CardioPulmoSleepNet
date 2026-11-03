@@ -1,0 +1,106 @@
+{
+  "repo": "LCSB-SCG/DRIVEN",
+  "commit": "dce8bfadd05d249ca7b55fa5d2d1974b52ba35ec",
+  "files": [
+    {
+      "path": "LICENCE.md",
+      "sha256": "6188fefeef57aa26fa0af3912ff494d7261f39f0f6a27070a40515c7734ae7f7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7e50ed3492399770205ae1b45c0c3240d260f5265b864ff9643a4d38f2698243"
+    },
+    {
+      "path": "create_hdf5_from_psg/find_channel_indx.m",
+      "sha256": "44eca19d6d58adda9b0e86b78f8db766e56760e175f11e5a4c0f37327cdd95d1"
+    },
+    {
+      "path": "create_hdf5_from_psg/gen_dat_files_complete.m",
+      "sha256": "0d68164872db95a38c367845ff39730c6908553eee45ffd274e85f5293fc89b3"
+    },
+    {
+      "path": "create_hdf5_from_psg/gen_dat_files_sleep.m",
+      "sha256": "5f37e7da86b9f2e4342335913b7849c33d2fad59591138501884619081b85ea0"
+    },
+    {
+      "path": "create_hdf5_from_psg/gen_img_complete.m",
+      "sha256": "1f27b58877b49aefbc515bcaf846fc1160eb3c6fc35b1bda2e327604e534f9a8"
+    },
+    {
+      "path": "create_hdf5_from_psg/gen_img_stride_ahitypes.m",
+      "sha256": "28a760ae2f8e6d3443c88a5c55b94641681a878c7732378a57ffb0f427f9ec40"
+    },
+    {
+      "path": "create_hdf5_from_psg/gen_img_stride_sleep.m",
+      "sha256": "9988a06a00f9f7a28948483ccc6c6505aa4bd79060c9d1464ace1ab070aa8cf4"
+    },
+    {
+      "path": "create_hdf5_from_psg/main_complete.m",
+      "sha256": "8f96aeba30afc2292917f90c0b0eae888de07a1d7ff9f08ada1efd74aff1d4bd"
+    },
+    {
+      "path": "create_hdf5_from_psg/main_sleep.m",
+      "sha256": "5111b69d7fa64c8599613c9154191e4e560a27be6e05f0af76a5c459f2e82317"
+    },
+    {
+      "path": "python_code/feature_extraction/combine_train.py",
+      "sha256": "d3018de67bf3ab8caf766830e76856109a8564f3034f1732a773e8e3910526b2"
+    },
+    {
+      "path": "python_code/feature_extraction/extract_feat_test.py",
+      "sha256": "dc32b2d942fe7bc089d7f1a3989f86f4cf12b3b099d6f229c7b59a122866a88b"
+    },
+    {
+      "path": "python_code/feature_extraction/extract_feat_train.py",
+      "sha256": "981bf9b552a0f31525501d83c5b742a7a6ea860cb9b22e1df4606057d8c2bb9f"
+    },
+    {
+      "path": "python_code/figures/plot_auroc_pr_models.py",
+      "sha256": "cb1df531ef428c7e44c2165cda9738bfee25b362a1cb86266038393b342a8e19"
+    },
+    {
+      "path": "python_code/figures/plot_dis_conf_models.py",
+      "sha256": "dc1c7ff80c380fa5b89f25edefb3d6e6c411e3cc2d7d861f14969456457dcf1e"
+    },
+    {
+      "path": "python_code/figures/plot_one_patient.py",
+      "sha256": "cdd2da53d46314e5d69a7797bed60d9b07c721ff710739281cce6f7e5f1d036f"
+    },
+    {
+      "path": "python_code/make_prediction/predict_final_test.py",
+      "sha256": "aa7d12325ae976f23a906f73d66d8853c9ba1a96a09100097ea3e60f18b01587"
+    },
+    {
+      "path": "python_code/models_evaluation/eval_predictions_ahiclass.py",
+      "sha256": "6c135b73a846d7a9c72f743a3e8dd629db02cbe8faec10c7e84bb3b351c28353"
+    },
+    {
+      "path": "python_code/models_evaluation/eval_predictions_ahiclass_ma.py",
+      "sha256": "59c69ce63b3e9c233b855e529f876b60dcbe9af561f1b375f2991e6de2ae8e5b"
+    },
+    {
+      "path": "python_code/models_evaluation/eval_predictions_sleep.py",
+      "sha256": "c7f9cdc72b3e7dfdad7f2721cfc5348e01865f1c4dcf2bbe15566d5167542fa5"
+    },
+    {
+      "path": "python_code/preliminary/get_indices.py",
+      "sha256": "692d963c6ab0fa35b15324a5862a43c2d57908c7508adf9662f3498b7d422d02"
+    },
+    {
+      "path": "python_code/preliminary/label_ahi.py",
+      "sha256": "987910e7c87ae168e0ad02afa5c8e07e803f4ab7a132f7b15b6b80843ded1a8b"
+    },
+    {
+      "path": "python_code/preliminary/separate_files_alldb.py",
+      "sha256": "c8efc08288c227b1c57c8ee8361713d01b7f5ba49d04940c5c8baeb3c3c237c3"
+    },
+    {
+      "path": "python_code/training/train_lgbm.py",
+      "sha256": "701ad20d8e8be75d2e3fba56d0e558d33b0eb09050ae5971c4ec1b6b5549a482"
+    },
+    {
+      "path": "python_code/training/train_nn.py",
+      "sha256": "856ef8409758ac2f00cd06487527e05d87f4a09d51aacf4f1d84f00f3e389865"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "method": "resleepnet",
+    "repo": "zhuangzx1127/ResSleepNet",
+    "commit": "9fcfda7d7d71efbb1c71486c4a3827e69473a703",
+    "license_file": "resleepnet/upstream/LICENSE"
+  },
+  {
+    "method": "oxinet",
+    "repo": "iPsych/OxiNet",
+    "commit": "b277ced7aacfd54639a731fa3cede7c3d5c2ce3a",
+    "license_file": "oxinet/upstream/LICENSE"
+  },
+  {
+    "method": "wav2sleep",
+    "repo": "joncarter1/wav2sleep",
+    "commit": "278e30463c8149c4e6899b8784da492fec695bd9",
+    "license_file": "wav2sleep/upstream/LICENSE"
+  },
+  {
+    "method": "bcgnet",
+    "repo": "FiveSeasonsMedical/BCGNet",
+    "commit": "7a7d0e6aee18208fb5b152c5cedde31ea8445ae5",
+    "license_file": null
+  },
+  {
+    "method": "driven",
+    "repo": "LCSB-SCG/DRIVEN",
+    "commit": "dce8bfadd05d249ca7b55fa5d2d1974b52ba35ec",
+    "license_file": "driven/upstream/LICENCE.md"
+  }
+]

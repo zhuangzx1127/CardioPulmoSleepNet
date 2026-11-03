@@ -1,0 +1,86 @@
+project: sleep-staging
+data:
+  _name: wuji_dl.data.DefaultDataModule
+  common:
+    _name: data.sleep_staging.SleepStagingDataset
+    max_tokens: 1535
+    token_sec: 30
+    num_workers: 16
+    features:
+    - src_name: breath
+      input_channels: 1
+      token_len: 120
+    - src_name: heartbeat
+      input_channels: 1
+      token_len: 120
+    - src_name: snore_bandpass
+      input_channels: 1
+      token_len: 12000  
+
+    - src_name: heartbeat_bandpass
+      input_channels: 1
+      token_len: 1500 
+
+    - src_name: breath_bandpass
+      input_channels: 1
+      token_len: 60
+      
+    - src_name: stage5
+      dst_name: stage
+      input_channels: 1
+      token_len: 1
+      is_input: false
+      pad_value: -1
+      dtype: long
+    index: index/example.csv
+    stride_tokens: 0
+    batch_size: 16
+    r_margin: 0
+    memmap: false     
+  train:
+    shuffle: true
+    split: train
+  val:
+    split: val
+  test:
+    split: test
+task:
+  _name: tasks.sleep_staging.SleepStagingTask
+  stages:
+  - W
+  - N1
+  - N2
+  - N3
+  - R
+  criterion:
+    _name: wuji_dl.ops.CrossEntropyLoss
+    weight: [0.18 , 0.22 , 0.18 , 0.22, 0.20]
+    ignore_index: -1
+  model:
+    num_classes: 5
+    _name: models.sleep_staging.SleepStagingNet
+    pretrain_task: tasks.sleep_staging.SleepStagingTask
+    pretrained: log/sleep-staging/psg5-fit-42-0715-230640/checkpoints/epoch=26-step=39555.ckpt
+    unfreeze_backbone: True
+  optimizer:
+    _name: torch.optim.Adam
+    lr: 1.0e-5
+callbacks:
+  ckpt_best:
+    _name: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/cohen_kappa
+    mode: max
+    save_weights_only: false
+  early_stopping:
+    _name: lightning.pytorch.callbacks.EarlyStopping
+    monitor: val/cohen_kappa
+    mode: max
+    patience: ${PATIENCE}
+  pbar:
+    _name: lightning.pytorch.callbacks.RichProgressBar
+    leave: true
+trainer:
+  log_every_n_steps: 10
+  max_epochs: 100
+  precision: 32
+PATIENCE: 10

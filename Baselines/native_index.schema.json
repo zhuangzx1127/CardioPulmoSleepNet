@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Locally generated native baseline input index",
+  "type": "object",
+  "required": [
+    "format",
+    "manifest_sha256",
+    "time_axis",
+    "records"
+  ],
+  "properties": {
+    "format": {
+      "const": "nsrr-native-baseline-inputs-v1"
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "time_axis": {
+      "type": "string"
+    },
+    "records": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "file",
+          "sha256",
+          "cohort",
+          "partition",
+          "source_duration_seconds",
+          "ahi",
+          "valid_bcg_stage_epochs"
+        ],
+        "properties": {
+          "recording_id": {
+            "type": "string"
+          },
+          "participant_id": {
+            "type": "string"
+          },
+          "file": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "cohort": {
+            "enum": [
+              "mesa",
+              "mros",
+              "shhs"
+            ]
+          },
+          "partition": {
+            "enum": [
+              "train",
+              "val",
+              "test"
+            ]
+          },
+          "source_duration_seconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "ahi": {
+            "type": "number",
+            "minimum": 0
+          },
+          "valid_stage_epochs": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1200
+          },
+          "valid_bcg_stage_epochs": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1200
+          }
+        }
+      }
+    }
+  }
+}

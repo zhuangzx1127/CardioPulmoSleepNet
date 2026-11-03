@@ -1,0 +1,39 @@
+_base: 
+  - configs/ahi/wxbase.yaml
+  - configs/ahi/wxmodel-base.yaml
+
+project: ah-events
+data:
+  _name: wuji_dl.data.DefaultDataModule
+  common:
+    batch_size: 48
+    index: index/example.csv
+    features:
+      - src_name: breath
+        input_channels: 1
+        token_len: 4
+      - src_name: heartbeat
+        input_channels: 1
+        token_len: 4
+      - src_name: ah_event
+        input_channels: 1
+        token_len: 1
+        is_input: False
+
+task:
+  model:
+      backbone:
+        features:
+        - head: breath
+          input_channels: 1
+          token_len: 4
+        - head: heartbeat
+          input_channels: 1
+          token_len: 4
+
+trainer:
+  log_every_n_steps: 10
+  max_epochs: 100
+  precision: 32
+
+PATIENCE: 10

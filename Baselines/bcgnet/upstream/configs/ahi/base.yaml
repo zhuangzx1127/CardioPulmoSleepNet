@@ -1,0 +1,74 @@
+project: sleep-staging
+data:
+  _name: wuji_dl.data.DefaultDataModule
+  common:
+    _name: data.sleep_staging.SleepStagingDataset
+    max_tokens: 1800
+    stride_tokens: 1800
+    token_sec: 1
+    num_workers: 32
+    weighted_sampling: ahi_class
+    features:
+      - src_name: heartbeat
+        input_channels: 1
+        token_len: 4
+
+      - src_name: snore_bandpass
+        input_channels: 1
+        token_len: 400
+
+      - src_name: heartbeat_bandpass
+        input_channels: 1
+        token_len: 50
+
+      - src_name: breath_bandpass
+        input_channels: 1
+        token_len: 2
+      - src_name: ahi_class
+        is_attribute: True
+        from_csv: True
+        is_input: False
+
+      - src_name: breath
+        input_channels: 1
+        token_len: 4
+
+      - src_name: ah_event
+        input_channels: 1
+        token_len: 1
+        is_input: False
+
+    batch_size: 32
+    r_margin: 0
+    memmap: false   
+
+  train:
+    split: train
+    shuffle: False
+  val:
+    split: val
+  test:
+    split: test
+task:
+  _name: tasks.ahi.AHITask
+  optimizer:
+    _name: torch.optim.Adam
+    lr: 0.0001
+callbacks:
+  ckpt_best:
+    _name: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/f1
+    mode: max
+    save_weights_only: False
+  early_stopping:
+    _name: lightning.pytorch.callbacks.EarlyStopping
+    monitor: val/f1
+    mode: max
+    patience: ${PATIENCE}
+  pbar:
+    _name: lightning.pytorch.callbacks.RichProgressBar
+    leave: True
+trainer:
+  log_every_n_steps: 1
+  max_epochs: 100
+  precision: bf16-mixed

@@ -1,0 +1,22 @@
+repos:
+# Common, useful hooks. See here for more: https://pre-commit.com/hooks.html
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-added-large-files # Checks you haven't staged large files for Git
+  - id: check-yaml # Checks YAML files are valid.
+  - id: check-toml # Checks TOML files are valid.
+  - id: debug-statements # Checks there aren't Python debugger statements lying around.
+  - id: end-of-file-fixer # Make sure files are empty, or end with a newline.
+  - id: trailing-whitespace # Removes trailing whitespace from files.
+# Ruff hooks.
+repos:
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.12.2
+  hooks:
+    # Run the linter.
+    - id: ruff-check
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format

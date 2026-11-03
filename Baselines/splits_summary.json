@@ -1,0 +1,167 @@
+{
+  "seed": 42,
+  "split_unit": "participant",
+  "cohorts": [
+    "mesa",
+    "mros",
+    "shhs"
+  ],
+  "main": {
+    "path": "Dataset/splits.json",
+    "sha256": "f492bd68f5d8b311ace62d797cefe0cf30dc11d4a5ff0f4f89d5b2928a2a534f",
+    "counts": {
+      "mesa": {
+        "train": {
+          "recordings": 1396,
+          "participants": 1396
+        },
+        "val": {
+          "recordings": 197,
+          "participants": 197
+        },
+        "test": {
+          "recordings": 402,
+          "participants": 402
+        }
+      },
+      "mros": {
+        "train": {
+          "recordings": 2660,
+          "participants": 2001
+        },
+        "val": {
+          "recordings": 368,
+          "participants": 284
+        },
+        "test": {
+          "recordings": 773,
+          "participants": 570
+        }
+      },
+      "shhs": {
+        "train": {
+          "recordings": 5849,
+          "participants": 4028
+        },
+        "val": {
+          "recordings": 829,
+          "participants": 578
+        },
+        "test": {
+          "recordings": 1695,
+          "participants": 1152
+        }
+      },
+      "total": {
+        "train": {
+          "recordings": 9905,
+          "participants": 7425
+        },
+        "val": {
+          "recordings": 1394,
+          "participants": 1059
+        },
+        "test": {
+          "recordings": 2870,
+          "participants": 2124
+        }
+      }
+    },
+    "methods": [
+      "resleepnet",
+      "oxinet",
+      "wav2sleep"
+    ]
+  },
+  "native": {
+    "path": "BaselineInputs/native_10h/splits.json",
+    "sha256": "c003f819a30f479d6e93f627f3c0a85f6c8f2afddf5fe4d98ac1986fdaf16573",
+    "counts": {
+      "mesa": {
+        "train": {
+          "recordings": 1396,
+          "participants": 1396
+        },
+        "val": {
+          "recordings": 197,
+          "participants": 197
+        },
+        "test": {
+          "recordings": 402,
+          "participants": 402
+        }
+      },
+      "mros": {
+        "train": {
+          "recordings": 2659,
+          "participants": 2001
+        },
+        "val": {
+          "recordings": 368,
+          "participants": 284
+        },
+        "test": {
+          "recordings": 773,
+          "participants": 570
+        }
+      },
+      "shhs": {
+        "train": {
+          "recordings": 5847,
+          "participants": 4026
+        },
+        "val": {
+          "recordings": 829,
+          "participants": 578
+        },
+        "test": {
+          "recordings": 1695,
+          "participants": 1152
+        }
+      },
+      "total": {
+        "train": {
+          "recordings": 9902,
+          "participants": 7423
+        },
+        "val": {
+          "recordings": 1394,
+          "participants": 1059
+        },
+        "test": {
+          "recordings": 2870,
+          "participants": 2124
+        }
+      }
+    },
+    "methods": [
+      "bcgnet",
+      "driven"
+    ]
+  },
+  "shared_native_exclusions": [
+    {
+      "recording_id": "mros-visit2-aa4113",
+      "participant_id": "mros:aa4113",
+      "cohort": "mros",
+      "partition": "train"
+    },
+    {
+      "recording_id": "shhs1-201851",
+      "participant_id": "shhs:201851",
+      "cohort": "shhs",
+      "partition": "train"
+    },
+    {
+      "recording_id": "shhs1-202180",
+      "participant_id": "shhs:202180",
+      "cohort": "shhs",
+      "partition": "train"
+    }
+  ],
+  "validation_test_membership_identical": true,
+  "axes": {
+    "main": "Processed TrainingCache timeline",
+    "native": "First 10 hours from raw MAT start, aligned to adjusted XML ClockTime"
+  }
+}

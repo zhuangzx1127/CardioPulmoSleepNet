@@ -1,0 +1,4 @@
+# Linux NVIDIA / Python 3.11. Keep Keras 2.x APIs used by the pinned source.
+tensorflow[and-cuda]==2.15.1
+keras==2.15.0
+numpy==1.26.4

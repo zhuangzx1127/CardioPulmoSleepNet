@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.venv*/
+.ipynb_checkpoints/
+*.log
+*.pt
+*.pth
+*.h5
+*.keras
+*.npz
+*.npy
+*.mat
+*.edf
+*.tfrecord
+*.data-*

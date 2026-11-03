@@ -1,0 +1,338 @@
+{
+  "repo": "joncarter1/wav2sleep",
+  "commit": "278e30463c8149c4e6899b8784da492fec695bd9",
+  "files": [
+    {
+      "path": ".pre-commit-config.yaml",
+      "sha256": "44082c765dda3e0bcf296d8d5a863199419b122bb473296605c649b3df63e710"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4d7f2e5bbae4970024ccbad782883bfd4d3c8241ff3d2e3a07051fb7082f1fa8"
+    },
+    {
+      "path": "README.md",
+      "sha256": "88b3d70713f284633ecd25042eda31fff3ad86eb76038dbb29fc5b927f942768"
+    },
+    {
+      "path": "preprocessing/0_fix_edfs.py",
+      "sha256": "507ed5a4048d42c5b4e2c9a46d0c9dfb231c55c89c34409ccf209eec20274999"
+    },
+    {
+      "path": "preprocessing/1_ingest.py",
+      "sha256": "b085538226659fad7a0d6d75e5b7b3db48679655af33efd85b0a7b1fde3ddbad"
+    },
+    {
+      "path": "preprocessing/2a_create_splits_paper.py",
+      "sha256": "720fcee1076580a3493ead979ad232b115212e18a08ed25b4c69dbb7c1525770"
+    },
+    {
+      "path": "preprocessing/2b_create_census_split.py",
+      "sha256": "eaa2179a130fec185ea21f3bcfa1e7d0d4efd145434fe8947808a1af5398120a"
+    },
+    {
+      "path": "preprocessing/README.md",
+      "sha256": "801cda796539884e9f9107aa4f06f2f91695eab98399cc7e71b607e88b285963"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3fc5c3147ae2b2aa2e83421b415ef64d873409efe47d88da4b0c074a1d528ae6"
+    },
+    {
+      "path": "scripts/config/datasets/all.yaml",
+      "sha256": "bbe30f39dc5a59997f0b974da8772776526f6c01e7c72cbd1b01123dcc7debfe"
+    },
+    {
+      "path": "scripts/config/datasets/all_no_cfs_ppg.yaml",
+      "sha256": "51fbf63a29115869a48f0b5fb9156e019dc281ddd37a4cc83f6af952a24555ab"
+    },
+    {
+      "path": "scripts/config/datasets/eog.yaml",
+      "sha256": "96fba9337490b5e2b671eed94a7a1118582232bce9cc282ab1c37843f0a995b3"
+    },
+    {
+      "path": "scripts/config/datasets/mesa.yaml",
+      "sha256": "cd46b655f513b5818ea6a363d42b8b0522dae301651bd8cf2dc05c8d046fddcb"
+    },
+    {
+      "path": "scripts/config/datasets/shhs.yaml",
+      "sha256": "9966cf1886277186a2b25c721a865a15b87008158c34373a8b6c953ebd0c6bfb"
+    },
+    {
+      "path": "scripts/config/debug/heavy.yaml",
+      "sha256": "9099920ff8c78834d476dd625fc2e9e40d55cf453de1db9be058980f582dbbe7"
+    },
+    {
+      "path": "scripts/config/debug/light.yaml",
+      "sha256": "b0e3d9cc08e57cfc12483f6e4521997df47e3cf9923bc72ae70045cdf1b2f50b"
+    },
+    {
+      "path": "scripts/config/debug/medium.yaml",
+      "sha256": "cb8872f0fa803a6de723d715562321ce074c3e2ac927f69f03e42d672a534169"
+    },
+    {
+      "path": "scripts/config/debug/none.yaml",
+      "sha256": "a0e1b43ce698f8860ebb4060f09642cb476f888a50f38cac0e07d9be6ede0325"
+    },
+    {
+      "path": "scripts/config/hydra/callbacks/git.yaml",
+      "sha256": "2712bada876d39f72a4aaaea58f9325a3910e8066e30105d16dc097e3578b06b"
+    },
+    {
+      "path": "scripts/config/hydra/callbacks/log.yaml",
+      "sha256": "157cf06f0d0018c40b17a9b8dfdacfd8782e8b88f3aecbae2f9d6d0602049174"
+    },
+    {
+      "path": "scripts/config/hydra/callbacks/mlflow.yaml",
+      "sha256": "856a45a51c5945cbdd3b350040dad032fcddda9648e63a4e58e45f62a0de592a"
+    },
+    {
+      "path": "scripts/config/hydra/callbacks/timer.yaml",
+      "sha256": "14fad22f12771e498e8ea71af3579f4e72c772b4cd6817ecd0c6bca9e74ab2cc"
+    },
+    {
+      "path": "scripts/config/hydra/launcher/slurm.yaml",
+      "sha256": "dce38fa720e7414b23b0a49732f55bd0184ea95e92c248b709646aa474524fe3"
+    },
+    {
+      "path": "scripts/config/inputs/cardiorespiratory/all.yaml",
+      "sha256": "bfc19f6ca8c9c7e2a5715ecaa3aac8b9212fc7e063376d2f18634a42b52277f5"
+    },
+    {
+      "path": "scripts/config/inputs/cardiorespiratory/ecg.yaml",
+      "sha256": "ef07291dfdd1a9d125d40e608cba211e922a1cc7d807f70fef70e651c62bc782"
+    },
+    {
+      "path": "scripts/config/inputs/cardiorespiratory/no_ppg.yaml",
+      "sha256": "44a0c9d2b41deb1587388f91a3ead6e152b21d92ce1c8b6303473ffe7d330ccf"
+    },
+    {
+      "path": "scripts/config/inputs/cardiorespiratory/ppg.yaml",
+      "sha256": "51b890617b3c6b0d8228198f04f92892af32743ea0f2b72e11291c5cfed4ac05"
+    },
+    {
+      "path": "scripts/config/inputs/neural/eog.yaml",
+      "sha256": "979b56f6db6cd53bfac793a63d16e718964227031b0f8dabd140d404ca2cb040"
+    },
+    {
+      "path": "scripts/config/inputs/neural/eog_l.yaml",
+      "sha256": "c9413cd7b660e5e80e4699398620301b27efcb3586ac2dcb55564e10e0f122df"
+    },
+    {
+      "path": "scripts/config/inputs/neural/eog_r.yaml",
+      "sha256": "611a7d39a9891aa3c14a7ae47a8e9e772d0cf070696a0c49de234eeb500666d2"
+    },
+    {
+      "path": "scripts/config/main.yaml",
+      "sha256": "8e573c4b02f9afa6b8d23edd63d2bfc4c9b21a6ed621ca9d1bd914b19a78ae4e"
+    },
+    {
+      "path": "scripts/config/model/ppgnet.yaml",
+      "sha256": "db399b23c5a200f66bd8cbe352b504838d2edd5df7a6f3392195fb9f87849fc3"
+    },
+    {
+      "path": "scripts/config/model/wav2sleep.yaml",
+      "sha256": "b34248141d29d02f3a58357d96d8d80f1c876c3b96318144763e9e88a4316a2c"
+    },
+    {
+      "path": "scripts/config/training/callbacks/checkpointing.yaml",
+      "sha256": "3ccdc07853be25b9da3e927c7ae410a5f79b7e1ea963125b7c910dcc1962041f"
+    },
+    {
+      "path": "scripts/config/training/callbacks/early_stopping.yaml",
+      "sha256": "915247468fd88d199f44545f0fb44829e0f9184354777db52edae799e96d51b3"
+    },
+    {
+      "path": "scripts/config/training/callbacks/ema.yaml",
+      "sha256": "c0ffcc0a5057f9f1ed14c0d36a6ecc978259c0b3430109af1b029f4b92d86e49"
+    },
+    {
+      "path": "scripts/config/training/callbacks/lr_monitor.yaml",
+      "sha256": "af191c00b43f4ef693a4b1005b9a5f1095cc5aa816f46ecf40fe5a64e7d4dcc3"
+    },
+    {
+      "path": "scripts/config/training/callbacks/progress.yaml",
+      "sha256": "f4992dde9fc9fcbe75c54ec9e2f46718c01ff6c95e2cc65fcf0d0c35e2855f4a"
+    },
+    {
+      "path": "scripts/config/training/main.yaml",
+      "sha256": "eb29840f7012a7c70f82f09b0db989d0bb097f0363155d78250cbaf03c25cc1d"
+    },
+    {
+      "path": "scripts/config/training/optimizer/adam.yaml",
+      "sha256": "e8e983f41b1492aa6fe06a7b32d02737a2fa4ae84165d6d6d65ecb7f324214d6"
+    },
+    {
+      "path": "scripts/config/training/optimizer/adamw.yaml",
+      "sha256": "9c6f817d2a614e723d6696d15bca87e21652119c7e42b06e0818814dfe9588a1"
+    },
+    {
+      "path": "scripts/config/training/scheduler/decay.yaml",
+      "sha256": "d5b6d66763ec3c99c534a6b8d8fea6a26bcc1afae013bf44830f9ca7fc9409d1"
+    },
+    {
+      "path": "scripts/config/training/scheduler/expdecay.yaml",
+      "sha256": "997f41bfc1e84505ca0adfe5a7cf13661f28d00c13355eec7a6c637797aee492"
+    },
+    {
+      "path": "scripts/config/training/trainer/profiler/pytorch.yaml",
+      "sha256": "c1742e46459b51a12ab7498f25acb718a975363a7a33018a947cec22b32564dc"
+    },
+    {
+      "path": "scripts/predict.py",
+      "sha256": "1243a28b3601a365c24688c2afc3abbad5c4945aac6e285a70b31ff30a4231da"
+    },
+    {
+      "path": "scripts/train.py",
+      "sha256": "4ac4af162d1e7306eda227ba36c48fc86ea0077438b0817257214c6756f503ba"
+    },
+    {
+      "path": "scripts/upload_to_hub.py",
+      "sha256": "a12260b90b81c9083514ccb502b86d6fde55e5bb30665c25e172f159a7866ab3"
+    },
+    {
+      "path": "src/wav2sleep/__init__.py",
+      "sha256": "b38cc54c39098932926da725ca5b504b72ab1baa945f26ad9d904b3cb837a270"
+    },
+    {
+      "path": "src/wav2sleep/api.py",
+      "sha256": "29bdb0a7faf1969ec6833e80899d2f8c18e5a3efd79250598d15dc1bf934fcf2"
+    },
+    {
+      "path": "src/wav2sleep/cli/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/wav2sleep/cli/data_utils.py",
+      "sha256": "e039e26f6ebf70f3b7ab130ad9fd3e440cfe773dbaa4dd6c8cd1a59b390a551a"
+    },
+    {
+      "path": "src/wav2sleep/cli/main.py",
+      "sha256": "f152e5b15509dcf3a3b88f603dca5d80aea1b7736efe75fdc91605ee40e74f66"
+    },
+    {
+      "path": "src/wav2sleep/cli/model_utils.py",
+      "sha256": "dbf89e83935eccb53e04453ce59ee6adbb748c3d0f8a2ab6819b31285d6c6432"
+    },
+    {
+      "path": "src/wav2sleep/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/wav2sleep/data/datamodule.py",
+      "sha256": "aa077420484c26eec56458effeaaf525ebd94eeb7d2ed592195f13f007eb0cb4"
+    },
+    {
+      "path": "src/wav2sleep/data/dataset.py",
+      "sha256": "026c6834a8ae80192a323e1caa85bbc354e16d96ee78ee836937f0c37d86f8ae"
+    },
+    {
+      "path": "src/wav2sleep/data/edf.py",
+      "sha256": "41c3d40bc3ca9b2fffe06c1152d32c64f177e8304ebe2b7e02a026a942526414"
+    },
+    {
+      "path": "src/wav2sleep/data/normalization.py",
+      "sha256": "c4cde9bd650894fe6d1b087d073b80921583cf2313824d27b0dd8e0c5a81e49a"
+    },
+    {
+      "path": "src/wav2sleep/data/nsrr.py",
+      "sha256": "4e14cf63c2a16f790f47773448388673e242bae54a450295597d307e0f03c9f2"
+    },
+    {
+      "path": "src/wav2sleep/data/preprocessing.py",
+      "sha256": "cd8060c95e0db2e8fe673bceb5004697c2376ada3da835f7adfb700e49cf7295"
+    },
+    {
+      "path": "src/wav2sleep/data/txt.py",
+      "sha256": "709fb60161e71cdf99cac7d7ec3cd6f49f2b7df9a2857a8f62af2094b8d52dd8"
+    },
+    {
+      "path": "src/wav2sleep/data/utils.py",
+      "sha256": "0901c75ed31a5ab00f1a1e50808765e7d461025fad503a6b4fdb1340ff5c8c7c"
+    },
+    {
+      "path": "src/wav2sleep/data/xml.py",
+      "sha256": "de868e23619987f5568fa55d20fdd685c5742179f1f8fb4ce5159a6b8fc47edc"
+    },
+    {
+      "path": "src/wav2sleep/hub.py",
+      "sha256": "d4fa0a97351d09f1f7d446a02ac8e7c07612519b5bb5e7930dc474c987bbe343"
+    },
+    {
+      "path": "src/wav2sleep/log.py",
+      "sha256": "173d8730a9c749c5fe5245e1d4430a831bbd767ca9792335c3b3f90140d0789c"
+    },
+    {
+      "path": "src/wav2sleep/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/wav2sleep/models/blocks.py",
+      "sha256": "ee542b3ff394071cde2d3fb542dadb3b204c8f31ed557d9a298e0743bf0ee5ea"
+    },
+    {
+      "path": "src/wav2sleep/models/ppgnet.py",
+      "sha256": "5fc7041e3c45a970934878e725eadaa55143eafbd9bcf4741cf2f802866ad27f"
+    },
+    {
+      "path": "src/wav2sleep/models/utils.py",
+      "sha256": "8582074e870b30a5362fa6fd5533284a6a203b4a98b9065b79289112ef926082"
+    },
+    {
+      "path": "src/wav2sleep/models/wav2sleep.py",
+      "sha256": "800347f169cf05cbdf2bc135453fe9b86b9505ee4400ff1d5fa134af2ea45247"
+    },
+    {
+      "path": "src/wav2sleep/parallel.py",
+      "sha256": "3f92b729ccc308cd9e5909d8ed58ae6bfcbf716cbdc487cdeca636d5c5a526c1"
+    },
+    {
+      "path": "src/wav2sleep/plotting.py",
+      "sha256": "4d56dc9e7605793a720e5378c17afc656dd9b8bf370509f44da9c61d75ac3b95"
+    },
+    {
+      "path": "src/wav2sleep/settings.py",
+      "sha256": "69c6e4d78a283a6bcf066b9c877ea2a13411be857a48d38042de434e459b28e6"
+    },
+    {
+      "path": "src/wav2sleep/stats.py",
+      "sha256": "9af8e47b630e981c480230bf9f1b25ecf7755232eda82b97940cbac37281b48f"
+    },
+    {
+      "path": "src/wav2sleep/trainer/__init__.py",
+      "sha256": "f03e5af282a0a9de960354549222829f897f3d57a6b72b9c93142eb74bc31d73"
+    },
+    {
+      "path": "src/wav2sleep/trainer/callbacks.py",
+      "sha256": "0498872cf2fe2d8da647477fd3f618323eaf58ded3a1141af77d9eb921c010a1"
+    },
+    {
+      "path": "src/wav2sleep/trainer/main.py",
+      "sha256": "7794af4733b250d4f4f624c7e163acb577dd5d6e5595ffce362778e072e06284"
+    },
+    {
+      "path": "src/wav2sleep/trainer/masker.py",
+      "sha256": "922c10ca2149bf4c77d03539653214508d5e25b97e19f24cd716762d5b59e4c7"
+    },
+    {
+      "path": "src/wav2sleep/trainer/scheduler.py",
+      "sha256": "725226e737c38c8db742ec3c2b94b1aafdc463e54d3f524a3abd812733640089"
+    },
+    {
+      "path": "src/wav2sleep/utils.py",
+      "sha256": "0f85094b829ee1346957c201dc9f4a9547846c948d28dda69a3de3ab563043d9"
+    },
+    {
+      "path": "tests/data/test_normalization.py",
+      "sha256": "9347ee1c6f2de6b6d52e40723901389bb41b4761fbbaa7a6a3d023347b88187d"
+    },
+    {
+      "path": "tests/model/test_causality.py",
+      "sha256": "91ce62cad0d75bf2bdf0e8a6a73bd4bc114695955dcfa57c262658a20f858ff4"
+    },
+    {
+      "path": "tests/model/test_compile.py",
+      "sha256": "7c4565e083aff4f522cfa0ef2f46e49a1295959493ee5258aa24c9ea372aa13e"
+    }
+  ]
+}

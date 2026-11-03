@@ -1,0 +1,43 @@
+project: sleep-staging
+data:
+  _name: wuji_dl.data.DefaultDataModule
+  common:
+    _name: data.ahi.AHIDataset
+    max_tokens: 1800
+    stride_tokens: 1800
+    token_sec: 1
+    num_workers: 16
+    weighted_sampling: ahi_class
+
+  train:
+    split: train
+    shuffle: True
+  val:
+    split: val
+  test:
+    split: test
+task:
+  _name: tasks.ahi.AHITask
+  criterion:
+    _name: losses.dicefocal.FocalLossWrapper
+  optimizer:
+    _name: torch.optim.Adam
+    lr: 0.0001
+callbacks:
+  ckpt_best:
+    _name: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/f1
+    mode: max
+    save_weights_only: False
+  early_stopping:
+    _name: lightning.pytorch.callbacks.EarlyStopping
+    monitor: val/f1
+    mode: max
+    patience: ${PATIENCE}
+  pbar:
+    _name: lightning.pytorch.callbacks.RichProgressBar
+    leave: True
+trainer:
+  log_every_n_steps: 1
+  max_epochs: 100
+  precision: bf16-mixed
